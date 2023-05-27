@@ -1,25 +1,56 @@
 {
-  "name": "next-design-system",
-  "version": "0.1.0",
+  "name": "kumonos-ui",
+  "version": "0.0.1",
   "private": true,
+  "author": {
+    "name": "Rio Saputra",
+    "url": "https://github.com/rioarray"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-typescript": "^7.21.5",
+    "@emotion/babel-preset-css-prop": "^11.11.0",
+    "@storybook/addon-essentials": "^7.0.17",
+    "@storybook/addon-interactions": "^7.0.17",
+    "@storybook/addon-links": "^7.0.17",
+    "@storybook/addon-styling": "^1.0.8",
+    "@storybook/blocks": "^7.0.17",
+    "@storybook/nextjs": "^7.0.17",
+    "@storybook/react": "^7.0.17",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "@types/node": "20.2.3",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
+    "babel-plugin-twin": "^1.1.0",
+    "chromatic": "^6.17.4",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.3",
+    "eslint-plugin-storybook": "^0.6.12",
     "next": "13.4.3",
-    "postcss": "8.4.23",
+    "prettier": "^2.8.8",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "storybook": "^7.0.17",
     "tailwindcss": "3.3.2",
+    "twin.macro": "^3.3.1",
     "typescript": "5.0.4"
+  },
+  "babelMacros": {
+    "twin": {
+      "preset": "emotion"
+    }
   }
 }
