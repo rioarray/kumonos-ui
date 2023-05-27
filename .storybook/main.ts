@@ -1,7 +1,7 @@
 import type { StorybookConfig } from "@storybook/nextjs";
 const config: StorybookConfig = {
   stories: [
-    "../src/components/**/*.mdx",
+    // "../src/components/**/*.mdx",
     "../src/components/**/*.stories.@(js|jsx|ts|tsx)",
   ],
   addons: [
@@ -16,7 +16,6 @@ const config: StorybookConfig = {
   },
   docs: {
     autodocs: "tag",
-    defaultName: "Documentation",
   },
   // https://github.com/ben-rogerson/twin.examples/blob/master/storybook-emotion-typescript/.storybook/main.ts#L21
   // Twin recommends adding the babel config here as Next.js disables SWC when .babelrc is added to the root.
