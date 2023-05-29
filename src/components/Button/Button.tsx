@@ -9,6 +9,7 @@ export const Button = forwardRef(
       block = false,
       colorType = "solid",
       disabled = false,
+      rounded = false,
       size = "default",
       variant = DEFAULT_VARIANT,
       ...props
@@ -21,6 +22,7 @@ export const Button = forwardRef(
         block={block}
         colorType={colorType}
         disabled={disabled}
+        rounded={rounded}
         size={size}
         variant={variant}
         {...props}

@@ -139,9 +139,9 @@ const variantStyles = ({ colorType, variant }: IButtonProps) => {
 };
 
 export const Button = styled.button(
-  ({ block, colorType, disabled, size, variant }: IButtonProps) => [
+  ({ block, colorType, disabled, rounded, size, variant }: IButtonProps) => [
     // common button styles
-    tw`border-transparent rounded-md font-semibold text-sm gap-2 inline-flex items-center justify-center`,
+    tw`border-transparent font-semibold text-sm gap-2 inline-flex items-center justify-center`,
 
     // transition styles
     variant !== "light" && tw`transition-all`,
@@ -156,6 +156,9 @@ export const Button = styled.button(
 
     // disabled styles
     disabled && tw`cursor-not-allowed disabled:opacity-60`,
+
+    // rounded styles
+    rounded ? tw`rounded-full` : tw`rounded-md`,
 
     // block into full width styles
     block && tw`w-full`,

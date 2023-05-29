@@ -65,6 +65,23 @@ export const Disabled: Story = {
   ),
 };
 
+export const Rounded: Story = {
+  args: {
+    rounded: true,
+  },
+  parameters: {
+    controls: { include: [] },
+  },
+  render: (args) => (
+    <div className="space-x-2">
+      <Button {...args}>Button</Button>
+      <Button colorType="outline" {...args}>
+        Button
+      </Button>
+    </div>
+  ),
+};
+
 export const Size: Story = {
   parameters: {
     controls: { include: [] },

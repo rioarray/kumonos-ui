@@ -34,6 +34,7 @@ export type IButtonProps = Omit<
      * Size of button
      */
     size?: "small" | "default" | "large";
+    rounded?: boolean;
   };
 
 export const DEFAULT_VARIANT = "primary";
