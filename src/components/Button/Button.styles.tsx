@@ -1,7 +1,7 @@
 import tw, { styled } from "twin.macro";
 import { DEFAULT_VARIANT, IVariant, IButtonProps } from "./Button.types";
 
-const COMMON_RING_STYLES = `enabled:focus:ring enabled:focus:ring-offset-0`;
+const COMMON_RING_STYLES = "enabled:focus:ring enabled:focus:ring-offset-0";
 
 const generateOutlineStyles = ({ variant = DEFAULT_VARIANT }: IVariant) => {
   switch (variant) {
