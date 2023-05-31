@@ -131,6 +131,15 @@ const generateSolidStyles = ({ variant = DEFAULT_VARIANT }: IVariant) => {
   }
 };
 
+const generateSize = {
+  small: { solid: tw`py-2 px-3`, outline: tw`py-[7px] px-3` },
+  default: { solid: tw`py-3 px-4`, outline: tw`py-[11px] px-4` },
+  large: {
+    solid: tw`py-3 px-4 sm:p-5`,
+    outline: tw`py-[11px] px-4 sm:p-[19px]`,
+  },
+};
+
 const variantStyles = ({ colorType, variant }: IButtonProps) => {
   if (colorType === "solid") {
     return generateSolidStyles({ variant });
@@ -147,9 +156,7 @@ export const Button = styled.button(
     variant !== "light" && tw`transition-all`,
 
     // size styles
-    size === "small" && tw`py-2 px-3`,
-    size === "default" && tw`py-3 px-4`,
-    size === "large" && tw`py-3 px-4 sm:p-5`,
+    generateSize[size ?? "default"][colorType ?? "solid"],
 
     // variant styles
     variantStyles({ colorType, variant }),

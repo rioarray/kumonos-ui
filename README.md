@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and [Storybook](https://storybook.js.org/). Using [Tailwind](https://tailwindcss.com/) as CSS framework. Big thanks to [Preline](https://preline.co/), because i'm using their [design sytem](https://preline.co/figma.html) for this project.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and [Storybook](https://storybook.js.org/). Using [Tailwind](https://tailwindcss.com/) as CSS framework. Big thanks to [Preline](https://preline.co/), because i'm using their [design sytem](https://www.figma.com/community/file/1179068859697769656) for this project.
 
 ## Getting Started
 

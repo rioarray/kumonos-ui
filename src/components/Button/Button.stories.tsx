@@ -7,9 +7,6 @@ const meta: Meta<typeof Button> = {
   title: "Components/Buttons/Button",
   tags: ["autodocs"],
   component: Button,
-  args: {
-    children: "Button",
-  },
   parameters: {
     controls: { hideNoControlsWarning: true, exclude: ["children"] },
   },
@@ -46,7 +43,11 @@ const Template: Story = {
   ),
 };
 
-export const Default: Story = {};
+export const Default: Story = {
+  args: {
+    children: "Button",
+  },
+};
 
 export const Disabled: Story = {
   args: {
