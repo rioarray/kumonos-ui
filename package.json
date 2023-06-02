@@ -18,5 +18,10 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "babelMacros": {
+    "twin": {
+      "preset": "emotion"
+    }
+  }
 }
